@@ -1,0 +1,292 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    /* color: inherit; */
+    color:white;
+}
+
+ul {
+    list-style-type: none;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
+/* Header */
+
+body {
+    position: relative;
+    font-family:"Lato";
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #4c4e50af;
+    color: white;
+    position: fixed;
+    z-index: 9999;
+    width: 100%;
+    align-items: center;
+    border-bottom: 1px solid white;
+    padding: 1rem 2rem;
+}
+
+.logo img {
+    width: 13rem;
+}
+
+.nav-items  {
+    display: flex;
+    gap: 1rem;
+    font-weight: 800;
+    font-size: 1rem;
+    color: white;
+
+}
+
+.nav-items {
+    color: white;
+}
+
+.nav-items a:hover {
+    color: rgb(213, 53, 53);
+    transform: scaleZ(-1);
+    transition: .5s;
+    text-decoration: none;
+}
+
+.nav-items a:first-child {
+    color: rgb(213, 53, 53);
+}
+
+
+input[type="checkbox"] {
+    display: none;
+
+}
+
+.drop-down {
+    position: relative;
+}
+
+.drop-menu {
+    position: absolute;
+    top: 100%;
+    left: 78%;
+    display: none;
+    color: black;
+}
+
+input[type="checkbox"]:checked .drop-menu {
+    display: block;
+}
+
+
+
+/* Header end */
+
+/* Showcase */
+.carousel-item img {
+position:relative;
+}
+
+.carousel-item .text {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    padding: 5rem;
+}
+.carousel-item .text h1 {
+   
+   text-align: center;
+    color: rgba(233, 231, 231, 0.664);
+    font-size: 7rem;
+    font-weight: 100;
+}
+
+.carousel-item h1 span {
+    font-weight: 600;
+    color: white;
+    text-align: center;
+}
+
+.carousel-item p {
+  color: rgb(130, 130, 130);
+}
+
+
+/* Showcase end */
+
+
+/* About us */
+.about-us {
+    background-color:rgb(52, 52, 52);
+    color: white;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+padding: 6rem 8rem;
+gap: 2rem;
+}
+
+.about-us h1 {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: lighter;
+    word-spacing: 1px;
+
+}
+
+.about-us p {
+    text-align: center;
+    font-weight: lighter;
+    color: rgb(143, 138, 138);
+    font-size: 1.1rem;
+}
+
+.about-us button {
+    background-color:rgb(213, 53, 53);
+    color: white;
+    max-width: 15rem;
+    padding: 1.2rem 4rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+
+.about-us button:hover {
+    background-color: transparent;
+    transition: .5s;
+}
+/* About us end */
+
+/* Services */
+.services {
+    background-image:url("/Images/home-engine.jpg");
+    background-size: cover;
+background-position: right 70% top 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+   
+   
+}
+.services .service-text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+padding:4rem  2rem;
+gap: 2rem;
+background-color: rgb(213, 53, 53);
+}
+
+.service-text h2 {
+    font-size: 6rem;
+    font-weight:100;
+
+}
+
+.service-text h2 span {
+font-weight: 600;
+}
+.services img {
+    width: 50%;
+    background-size: cover;
+}
+
+.services button {
+    background-color:white;
+    color: rgb(60, 60, 60);
+    max-width: 15rem;
+    padding: 1.2rem 4rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+}
+.services button:hover {
+    color: white;
+    background-color:rgb(60, 60, 60);
+    transition: .5s;
+}
+
+
+/* Services end *
+
+/* Guarantee */
+
+
+.guarantee  {
+    
+   
+    background-image:url("/Images/home-salon.jpg");
+    background-size: contain;
+background-position: left 100% top 0%;
+    background-repeat: no-repeat;
+    width: 100%;
+  
+}
+
+.guarantee .guarantee-text {
+    width: 50%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+padding:  4rem 2rem;
+gap: 2rem;
+
+background-color: rgb(47, 46, 46);
+
+}
+
+.guarantee-text h2 {
+    font-size: 6rem;
+    font-weight:100;
+
+}
+
+.guarantee-text h2 span {
+font-weight: 600;
+}
+.guarantee img {
+    width: 50%;
+    background-size: cover;
+}
+
+.guarantee button {
+  
+    max-width: 15rem;
+    padding: 1.2rem 4rem;
+    outline: none;
+    border: none;
+    font-weight: 500;
+    font-size: 1.15rem;
+    background-color:rgb(117, 106, 106);
+    color: white;
+}
+.guarantee button:hover {
+    color: white;
+    background-color:rgb(185, 52, 52);
+    transition: 1.5s;
+   
+}
+
+
+/* Guarantee end */
